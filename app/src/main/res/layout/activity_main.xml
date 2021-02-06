@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/smallMargine"
+        android:text="@string/speed0"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="@+id/emotionalFaceView"
+        app:layout_constraintEnd_toStartOf="@id/emotionalFaceView"
+        app:layout_constraintTop_toTopOf="@id/emotionalFaceView" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/speed1"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toTopOf="@id/emotionalFaceView"
+        app:layout_constraintEnd_toEndOf="@+id/emotionalFaceView"
+        app:layout_constraintStart_toStartOf="@id/emotionalFaceView"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/smallMargine"
+        android:layout_marginEnd="@dimen/smallMargine"
+        android:text="@string/speed2"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="@+id/emotionalFaceView"
+        app:layout_constraintStart_toEndOf="@id/emotionalFaceView"
+        app:layout_constraintTop_toTopOf="@id/emotionalFaceView" />
+
+    <Button
+        android:id="@+id/btnSpeed2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/text_btn_speed_2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/guideline2"
+        app:layout_constraintTop_toBottomOf="@+id/emotionalFaceView" />
+
+    <Button
+        android:id="@+id/btnSpeed1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/text_btn_speed_1"
+        app:layout_constraintEnd_toStartOf="@+id/btnSpeed2"
+        app:layout_constraintStart_toEndOf="@id/btnSpeed0"
+        app:layout_constraintTop_toBottomOf="@+id/emotionalFaceView" />
+
+    <Button
+        android:id="@+id/btnSpeed0"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/text_btn_speed_0"
+        app:layout_constraintEnd_toStartOf="@+id/guideline2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/emotionalFaceView" />
+
+
+    <Button
+        android:id="@+id/btnButtonActivityMain"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/text_btn_activity_main"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
+
+    <ImageView
+        android:id="@+id/ivFan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/fan"
+        app:layout_constraintBottom_toTopOf="@+id/btnButtonActivityMain"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/emotionalFaceView" />
+
+    <com.example.shymko_hw_lesson21_2901021_customview.RegulatorView
+        android:id="@+id/emotionalFaceView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_centerInParent="true"
+        android:layout_marginTop="@dimen/bigMargine"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="205dp" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

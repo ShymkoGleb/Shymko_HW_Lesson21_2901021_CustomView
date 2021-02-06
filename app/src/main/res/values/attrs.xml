@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="PosterViewGroup">
+        <attr name="ivImage" format="reference" />
+        <attr name="tvName" format="string" />
+        <attr name="tvGenre" format="string" />
+        <attr name="rbRating" format="float" />
+        <attr name="tvPrice" format="integer" />
+        <attr name="tvCurrency" format="string" />
+    </declare-styleable>
+
+    <declare-styleable name="RegulatorAttrs">
+        <attr name="faceColor" format="color" />
+        <attr name="eyesColor" format="color" />
+        <attr name="mouthColor" format="color" />
+        <attr name="borderColor" format="color" />
+        <attr name="borderWidth" format="dimension" />
+        <attr name="state" format="enum">
+            <enum name="stage0" value="0" />
+            <enum name="stage1" value="1" />
+            <enum name="stage2" value="2" />
+        </attr>
+    </declare-styleable>
+
+</resources>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="middleSizeForImageView">124dp</dimen>
+    <dimen name="smallMargine">25dp</dimen>
+    <dimen name="middleTextSizeTextView">25dp</dimen>
+    <dimen name="smallTextSizeTextView">15sp</dimen>
+    <dimen name="superSmallMargine">4dp</dimen>
+    <dimen name="bigMargine">50dp</dimen>
+</resources>

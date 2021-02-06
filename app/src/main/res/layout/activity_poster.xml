@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.shymko_hw_lesson21_2901021_customview.PosterActivity">
+
+    <Button
+        android:id="@+id/btnButtonActivityPoster"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/text_btn_activity_poster"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+    <com.example.shymko_hw_lesson21_2901021_customview.PosterViewGroup
+        android:id="@+id/vgPoster"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:ivImage="@drawable/jurassic"
+        app:rbRating="3"
+        app:tvCurrency="@string/film1_currency"
+        app:tvGenre="@string/film1_genre"
+        app:tvName="@string/film1_name"
+        app:tvPrice="@string/film1_price"
+        tools:ignore="MissingConstraints" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
